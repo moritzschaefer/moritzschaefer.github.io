@@ -1,29 +1,86 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
-    i18n: company_a
+    detail: Abitur/A-levels
+    i18n: abitur
   desc:
-    detail: I worked at Company A ...
-    i18n: company_a_desc
+    detail: Finishing highschool with an average grade of 1.2
+    i18n: alevelsdesc
   date:
-    detail: Apr. 2016
-    i18n: company_a_date
+    detail: 2011
+    i18n: alevelsdate
   job:
-    detail: CTO
+    detail: Student
     i18n: company_a_job
-  icon: fa-plus-square
+  icon: fa-graduation-cap
 
 - name:
-    detail: Company B
+    detail: Sayarinapaj
+    i18n: abitur
+  desc:
+    detail: Volunteering one year in a training school in the suburban areas of Cochabamba (Bolivia)
+    i18n: alevelsdesc
+  date:
+    detail: 2011-2012
+    i18n: alevelsdate
+  job:
+    detail: Volunteering work
+    i18n: company_a_job
+  icon: fa-child
+
+- name:
+    detail: Bachelor & Master
     i18n: company_b
   desc:
-    detail: I worked at Company B ...
+    detail: Computer science @ TU Berlin
     i18n: company_b_desc
   date:
-    detail: Jun. 2015
+    detail: 2012-2018
     i18n: company_b_date
   job:
-    detail: Full Stack Developer
+    detail: Student
     i18n: company_b_job
-  icon: fa-plus-square
+  icon: fa-graduation-cap
+
+
+- name:
+    detail: Student work
+    i18n: company_b
+  desc:
+    detail: Big Data mining and competitor watch for marketing department at Rocket Internet GmbH, Lamudi/Carmudi and Lamoda.ru
+    i18n: company_b_desc
+  date:
+    detail: 2013-2016
+    i18n: company_b_date
+  job:
+    detail: Full Stack Developer & Data scientist
+    i18n: company_b_job
+  icon: fa-database
+
+- name:
+    detail: Student exchanges
+    i18n: company_b
+  desc:
+    detail: One semester at Universidad de la Laguna (Spain), two semesters and bachelor thesis at Shanghai Jiao Tong University (China)
+    i18n: company_b_desc
+  date:
+    detail: 2013, 2015/2016
+    i18n: company_b_date
+  job:
+    detail: Student
+    i18n: company_b_job
+  icon: fa-graduation-cap
+
+- name:
+    detail: Master thesis
+    i18n: company_b
+  desc:
+    detail: CRISPR target analysis application
+    i18n: company_b_desc
+  date:
+    detail: 2017-2018
+    i18n: company_b_date
+  job:
+    detail: Bioinformatician
+    i18n: company_b_job
+  icon: fa-graduation-cap
