@@ -6,7 +6,7 @@ desc: ""
 keywords: "electro,himmelreich,basement,music,techno,berlin"
 categories: [Life]
 tags: [Techno,Music]
-icon: icon-music
+icon: icon-angular
 ---
 
 Collecting new ideas for my roommate's album while building up a club in the basement.
