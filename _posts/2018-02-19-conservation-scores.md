@@ -31,7 +31,7 @@ Thinking one layer down, there is another source of information which can help t
 
 As several nucleotides can fall off at the cut site and because the underlying amino acid at the cut site is affected by various nucletiodes on the right and the left of the cut site dependent on the frame offset, I chose to extract consveration scores for the nucleotide at the cut site and its 3 neighbours on both sides. I furthermore derived three additional data. The maximum, minimum and median of the seven conservation scores.
 
-![Conservation features]({{ site.img_path }}/conservation/Conservation_features.svg)
+![Conservation features]({{ site.img_path }}/conservation/Conservation_features.png)
 
 Pearson correlating these data with the experimentally determined guide efficacies showed statistically significant correlations with the highest p-value of 0.0043 for the derived maximum data.
 
