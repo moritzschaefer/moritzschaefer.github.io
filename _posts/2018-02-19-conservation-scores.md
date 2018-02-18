@@ -31,11 +31,11 @@ Thinking one layer down, there is another source of information which can help t
 
 As several nucleotides can fall off at the cut site and because the underlying amino acid at the cut site is affected by various nucletiodes on the right and the left of the cut site dependent on the frame offset, I chose to extract consveration scores for the nucleotide at the cut site and its 3 neighbours on both sides. I furthermore derived three additional data. The maximum, minimum and median of the seven conservation scores.
 
-![Conservation features]({{ site.img_path }}/conservation/Conservation_features.png)
+<img src="{{ site.img_path }}/conservation/Conservation_features.png" width="75%">
 
 Pearson correlating these data with the experimentally determined guide efficacies showed statistically significant correlations with the highest p-value of 0.0043 for the derived maximum data.
 
-![Conservation correlations]({{ site.img_path }}/conservation/conservation_correlation.png)
+<img src="{{ site.img_path }}/conservation/conservation_correlations.png" width="75%">
 
 To verify the predictiveness of conservation data in guide efficacy prediction, I trained the model from Fusi and Doench et al. 200 times with random training/validation splits. 100 times I used the original feature set from their publication and 100 times I added the extracted conservation data. As seen, the mean and median performances improve with the additional information provided.
 
