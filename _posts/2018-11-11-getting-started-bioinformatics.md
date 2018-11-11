@@ -77,7 +77,7 @@ There are dozens of programming languages which all have their advantages and th
 
 ### Python vs R
 
-While R was invented as a language for statisticians, Python is a programming language that targets simplicity, readability of code and universal usage. There are Python libraries for nearly anything: [Building](http://flask.pocoo.org "Flask") [websites](https://djangoproject.com "Django"), [scraping](https://scrapy.org "scrapy"),[image](https://opencv.org/) [processing](https://python-pillow.org/), [network](https://scapy.net/) [analysis](https://twistedmatrix.com/trac/), [graphical](https://www.nltk.org/) [user](https://wiki.python.org/moin/TkInter) [interfaces](https://wiki.python.org/moin/PyQt), [language processing](https://www.nltk.org/), and of course [all](https://www.numpy.org "Numpy") [kinds](https://www.scipy.org "Scipy") [of](http://pandas.pydata.org "Pandas") [data](https://matplotlib.org "Matplotlib") [analytics](https://pytorch.org "PyTorch").
+While R was invented as a language for statisticians, Python is a programming language that targets simplicity, readability of code and universal usage. There are Python libraries for nearly anything: [Building](http://flask.pocoo.org "Flask") [websites](https://djangoproject.com "Django"), [scraping](https://scrapy.org "scrapy"), [image](https://opencv.org/) [processing](https://python-pillow.org/), [network](https://scapy.net/) [analysis](https://twistedmatrix.com/trac/), [graphical](https://www.nltk.org/) [user](https://wiki.python.org/moin/TkInter) [interfaces](https://wiki.python.org/moin/PyQt), [language processing](https://www.nltk.org/), and of course [all](https://www.numpy.org "Numpy") [kinds](https://www.scipy.org "Scipy") [of](http://pandas.pydata.org "Pandas") [data](https://matplotlib.org "Matplotlib") [analytics](https://pytorch.org "PyTorch").
 
 The Python language enables developers to easily write code that is understandable and shareable. In comparison to R, it is clear and consistent in its usage which makes it easier to understand and employ in the long term. To get a feeling how the data science community shifts towards using Python instead of R have a look at the [google search trend](https://trends.google.de/trends/explore?date=today%205-y&q=R%20for%20data%20science,python%20data%20science).
 
@@ -145,13 +145,13 @@ If you have any comment, feedback or question, leave a comment or contact me on 
 
 As promised I'll put some links here of websites that already discussed on how to get started with programming and bioinformatics. For example, numerous people asked at reddit for resources to learn Python and Bioinformatics basics and they received a lot of useful links. Have a look into these resources to get a broader view of what is recommended for learning. 
 
-https://www.reddit.com/r/learnpython/comments/6f7ybq/what_is_the_best_way_to_learn_python_3/
-https://www.reddit.com/r/learnprogramming/comments/83oes2/recommendations_for_most_effective_way_to_learn/
-https://www.reddit.com/r/learnprogramming/comments/88xf0o/whats_the_best_way_to_learn_python_online_for_free/
-https://www.quora.com/How-should-you-start-learning-programming
-https://www.youtube.com/watch?v=A8vjlqUOniY
-https://github.com/ossu/bioinformatics
-https://www.reddit.com/r/bioinformatics/comments/6ccpfe/advice_for_learning_bioinformatics/
-https://edwardslab.bmcb.georgetown.edu/teaching/bchb524/2016/
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005871
+- https://www.reddit.com/r/learnpython/comments/6f7ybq/what_is_the_best_way_to_learn_python_3/
+- https://www.reddit.com/r/learnprogramming/comments/83oes2/recommendations_for_most_effective_way_to_learn/
+- https://www.reddit.com/r/learnprogramming/comments/88xf0o/whats_the_best_way_to_learn_python_online_for_free/
+- https://www.quora.com/How-should-you-start-learning-programming
+- https://www.youtube.com/watch?v=A8vjlqUOniY
+- https://github.com/ossu/bioinformatics
+- https://www.reddit.com/r/bioinformatics/comments/6ccpfe/advice_for_learning_bioinformatics/
+- https://edwardslab.bmcb.georgetown.edu/teaching/bchb524/2016/
+- https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005871
 
