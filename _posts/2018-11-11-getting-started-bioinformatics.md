@@ -145,6 +145,7 @@ If you have any comment, feedback or question, leave a comment or contact me on 
 
 As promised I'll put some links here of websites that already discussed on how to get started with programming and bioinformatics. For example, numerous people asked at reddit for resources to learn Python and Bioinformatics basics and they received a lot of useful links. Have a look into these resources to get a broader view of what is recommended for learning. 
 
+- https://www.biostars.org/p/311/
 - https://www.reddit.com/r/learnpython/comments/6f7ybq/what_is_the_best_way_to_learn_python_3/
 - https://www.reddit.com/r/learnprogramming/comments/83oes2/recommendations_for_most_effective_way_to_learn/
 - https://www.reddit.com/r/learnprogramming/comments/88xf0o/whats_the_best_way_to_learn_python_online_for_free/
