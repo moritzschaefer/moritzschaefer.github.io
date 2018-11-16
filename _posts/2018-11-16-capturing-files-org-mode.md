@@ -22,8 +22,7 @@ Here is how I achieved this:
 
 ### Use an ordinary capture template to create a new item for a receipt
 
-```elisp
-
+```
 (custom-set-variables
  '(org-capture-templates
    (quote
@@ -37,14 +36,14 @@ Here is how I achieved this:
 
 ### Set a hook to postprocess captured items
 
-```elisp
+```
 (add-hook 'org-capture-before-finalize-hook 'moritzs/download-smartphone-photo)
 ```
 
 ### Make sure only receipts capture items are modified and attach the most recently synced file to them
 
 
-```elisp
+```
 
 (defun moritzs/download-smartphone-photo ()
   (when (equal (buffer-name) "CAPTURE-receipts.org")
@@ -55,13 +54,13 @@ Here is how I achieved this:
 
 org-download comes in handy when attaching files and adding links in your org files. To make org-download use org-attach instead of copying the files straight into your directories set 
 
-```elisp
+```
 (setq org-download-method 'attach)
 ```
 
 ### Find the most recently synced file
 
-```elisp
+```
 (defun moritzs/recent-smartphone-photo ()
   "Open a recently taken smartphone picture."
   (format "/home/moritz/Seafile/Main/My Photos/Camera/%s" (shell-command-to-string "ls -t  '/home/moritz/Seafile/Main/My Photos/Camera/' | head -n 1 | tr -d '\n'"))
