@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Turning your basement into a techno club - Vol. 1"
 date:   2018-02-18
 desc: ""

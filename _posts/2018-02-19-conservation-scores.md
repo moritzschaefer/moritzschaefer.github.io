@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "How conservation scores affect CRISPR/Cas9 guide efficacy prediction"
 date:   2018-02-19
 desc: "How conservation scores affect CRISPR/Cas9 guide efficacy prediction"

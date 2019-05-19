@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "What geeks talked about at Websummit 2017"
 date:   2017-11-09
 desc: "What geeks talked about at Websummit 2017"

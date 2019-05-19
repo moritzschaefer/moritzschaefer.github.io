@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Capturing files with org-mode"
 date:   2018-11-16
 desc: "Emacs org-mode is great for capturing quick notes, links and similiar text based resources. However sometimes it can come in handy to store or archive a file"

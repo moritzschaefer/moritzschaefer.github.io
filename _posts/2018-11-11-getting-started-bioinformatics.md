@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Getting started in bioinformatics - A beginners guide"
 date:   2018-11-11
 desc: "Resources and my two cents about how to start programming and learning about bioinformatics"

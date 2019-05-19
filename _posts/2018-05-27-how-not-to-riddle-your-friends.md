@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "How not to riddle your friends"
 date:   2018-05-27
 desc: "How not to riddle your friends"
