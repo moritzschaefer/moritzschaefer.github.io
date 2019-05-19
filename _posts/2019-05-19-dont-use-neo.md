@@ -15,7 +15,7 @@ It's been quite a while that I started to use a keyboard layout which wasn't des
 > The positions of the letters are not only optimized for German letter frequency, but also for typical groups of two or three letters. 
 (Wikipedia)
 
-Even more importantly (especially for programmers) is the "3rd layer", which makes special characters (\()\{}\[]\<>:\/}{-)@~#'$"+%"'*}) accessible, as they are inconveniently positioned on the number row in the QWERTZ layout.
+Even more important (especially for programmers) is the "3rd layer", which makes special characters (\()\{}\[]\<>:\/}{-)@~#'$"+%"'*}) accessible, as they are inconveniently positioned on the number row in the QWERTZ layout.
 
 What I did not know when I went through the first weeks of using Neo and rewiring my brain to learn new keystroke orders for every single word, was that there is an improved version of the layout: Bone. Bone uses the same 3rd layer key positions, however layer 1 (the alphabet characters) is heavily changed and is optimized for German and English words alike.
 
