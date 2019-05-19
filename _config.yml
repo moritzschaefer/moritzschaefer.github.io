@@ -59,7 +59,7 @@ title: Just my blog
 title_separator          : "-"
 description: Moritz' blog
 name                     : "Moritz Schaefer"
-url: https://moritzschaefer.github.io/homepage  # url should be 'http://<github_username>.github.io/homepage' as before
+url: https://www.moritzs.de/  # url should be 'http://<github_username>.github.io/homepage' as before
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "moritzschaefer/homepage" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
