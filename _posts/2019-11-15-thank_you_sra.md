@@ -62,7 +62,7 @@ $ ncdu /
 A change in the disk usage without a change in file sizes could only be explained by deleted, yet still opened files, so I checked open but deleted files and indeed observed an interesting candidate (the only one actually):
 
 ```
-lsof +L1
+$ lsof +L1
 COMMAND     PID     USER   FD   TYPE DEVICE   SIZE/OFF NLINK    NODE NAME
 fasterq-d 17854 schamori    7u   REG    8,2 8002551155     0 1179402 /var/tmp/.sra.cache (deleted)
 ```
@@ -90,7 +90,7 @@ EXTENTS:
 After several minutes:
 
 ```
-sudo  debugfs -R 'stat <1179402>' /dev/sda2
+$ sudo  debugfs -R 'stat <1179402>' /dev/sda2
 Inode: 1179402   Type: regular    Mode:  0644   Flags: 0x80000
 Generation: 4259928218    Version: 0x00000000:00000001
 User: 30925   Group:   100   Size: 8002551155
