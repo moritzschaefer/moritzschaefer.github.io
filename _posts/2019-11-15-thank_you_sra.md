@@ -1,4 +1,3 @@
-* 
 ---
 layout: single
 title:  "Thank you fasterq-dump - I learned a lot about filesystems"
@@ -9,6 +8,7 @@ categories: [linux,]
 tags: [linux]
 icon: icon-default
 ---
+
 After waiting long hours to download a few SRAs using fastq-dump, I was happy to learn that fasterq-dump would finally lead to faster fastq files on my machine.
 
 Furthermore I ran into a lot of trouble because of temporary/cache files, clogging my disk and making fastq-downloads fail, a problem which I thought would be solved with the added -t option in fasterq-dump. From SRA-tool's online wiki: 
