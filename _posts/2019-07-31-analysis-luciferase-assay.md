@@ -11,7 +11,7 @@ icon: icon-default
 ---
 # Motivation
 
-The Luciferase reporter assay is commonly used to ....
+The Luciferase reporter assay is commonly used to report 
 dual reporter
 Analysis of the data is fairly simple, however little support is provided only.
 
