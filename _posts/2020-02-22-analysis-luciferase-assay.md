@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Statistical analysis of Luciferase Assays"
-date:   2019-07-31
+date:   2020-02-22
 desc: "Simple guide for the analysis of the statistical analysis of Luciferase reporter assays"
 keywords: "statistics,analysis,diy,code,test,statistical,simple,reporter"
 categories: [biology,statistics]
