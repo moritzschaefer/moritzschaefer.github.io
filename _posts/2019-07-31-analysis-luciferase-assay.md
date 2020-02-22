@@ -7,6 +7,7 @@ keywords: "statistics,analysis,diy,code,test,statistical,simple,reporter"
 categories: [biology,statistics]
 tags: [biology]
 icon: icon-dna
+mathjax: true
 ---
 
 # Motivation
@@ -14,7 +15,7 @@ icon: icon-dna
 The Luciferase reporter assay is used to measure the repressional influence of a regulatory element. A common example is the assessment of microRNA-mediated post-transcriptional regulation of 3'untranslated regions (3'UTRs). It works by transfecting a prepared luciferase plasmid, containing the coding sequence for a luciferase protein followed by the to be tested 3'UTR, along with a to be tested miRNA, into a suitable cell line. After some time, the cells are harvested and lysed in order to assess the amount of produced luciferase using a luminescence detector.
 In order to normalize for minor pipetting mistakes and other potential per-well deviations, dual luciferase reporter assays can be used, which enable the measurement of two distinct luciferase proteins, one of them without a regulatory element to be used as a normalizer. 
 
-Although analysis of the data, produced in such an experiment, is fairly simple, I failed in finding easily accessible resources on the web on this matter, which is what motivated me to share my current approach. 
+Although analysis of the data produced in such an experiment is fairly simple, I failed in finding easily accessible resources on the web on this matter, which is what motivated me to share my current approach. 
 
 This being said, please note, that my statistical knowledge is limited, so take this guide with a grain of salt. I have to rely on the information I got from the references I was using and appreciate any comment on the matter. 
 
