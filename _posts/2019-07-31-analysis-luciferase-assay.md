@@ -31,7 +31,7 @@ Dual reporter assays require an initial normalization step, which is skipped for
 
 In order to perform normalization the reporter fluorophore intensity is simply divided by the normalizing fluorophore. To provide an exmaple, for the psiCHECK(TM) 2 vector this would be:
 
-$$I_normalized = \frac{I_Renilla}{I_Firefly}$$
+$$I_{normalized} = \frac{I_{Renilla}}{I_{Firefly}}$$
 
 ## Averaging technical replicates
 
