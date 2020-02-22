@@ -1,4 +1,3 @@
-* 
 ---
 layout: single
 title:  "Thank you fasterq-dump - I learned a lot about filesystems"
