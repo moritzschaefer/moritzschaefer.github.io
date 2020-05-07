@@ -15,8 +15,7 @@ types of information that is collected and recorded by Moritzs and how
 we use it.
 
 If you have additional questions or require more information about our
-Privacy Policy, do not hesitate to contact us through email at
-mollitz@gmail.com
+Privacy Policy, do not hesitate to contact us through email at mail|[at]|moritzs|<dot>|de (without the '|' signs).
 
 General Data Protection Regulation (GDPR)
 -----------------------------------------

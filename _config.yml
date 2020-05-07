@@ -147,7 +147,7 @@ analytics:
 # author
 author:
   name: 'Moritz Schaefer'
-  email: 'mail@moritzs.de'
+  email: 'mail|at|moritzs|dot|de'
   cv: https://github.com/moritzschaefer/cv/raw/master/cv.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
   bio: I am a passionate data scientist interested in Bioinformatics. Currently at ETH Zurich working with microRNAs in early development
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
@@ -159,11 +159,10 @@ author:
   #   - name: fa-database
   avatar: '/static/assets/img/ich.jpg'
   location         : "Zurich"
-  email            : "moritz.schaefer@biol.ethz.ch"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:moritz.schaefer@biol.ethz.ch
+      url: mailto:mail|at|moritzs|dot|de
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://your-website.com"
