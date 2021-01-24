@@ -9,6 +9,11 @@ tags: [technology]
 icon: icon-default
 ---
 
+Edit (2021-01-24):
+
+The website has recently been updated and bone is mentioned on the front page now. Again, thanks for the great work to all the people involved in the project.
+
+
 It's been quite a while that I started to use a keyboard layout that wasn't designed to optimize the use of typewriters, but instead, to best fit today's needs for writing on a keyboard: [Neo](https://neo-layout.org/ "Neo"). 
 
 > The positions of the letters are not only optimized for German letter frequency, but also for typical groups of two or three letters. 
