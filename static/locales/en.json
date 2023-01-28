@@ -7,7 +7,7 @@
     "about_me": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "career": "Career",
+    "cv": "CV",
     "blog": "Blog",
     "link": "Link"
   },
@@ -24,8 +24,8 @@
     "cpython": "This project is other's project. I use another request to get repo's information.",
     "familycode": "This is another project."
   },
-  "career":{
-    "my_career": "My Career",
+  "cv":{
+    "my_cv": "My CV",
     "nextcode": "Nextcode",
     "nextcode_des": "Now I am in Nextcode and develop website with Python code for genetic analysis.",
     "nextcode_date": "Apr. 2016",

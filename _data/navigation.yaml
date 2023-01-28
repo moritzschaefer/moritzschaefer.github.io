@@ -1,5 +1,9 @@
 main:
   - title: "About"
-    url: /about/
-  - title: "Blog"
     url: /
+  # - title: "CV"
+  #   url: /blog/
+  - title: "Blog"
+    url: /blog/
+  - title: "Impressum"
+    url: /impressum/
