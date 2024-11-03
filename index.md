@@ -5,10 +5,10 @@ header:
   image: /static/assets/img/cdr_inpainting.png
 ---
 
-Hey! 
 
-I am a computer scientist (B. Sc./M. Sc.) who discovered the fascinating world of biology (PhD) and is now working on the intersection of the two fields. In 2021, I completed my PhD at the University of ETH Zurich in the department of Biology with the title "One layer at a time – disentangling canonical and noncanonical roles of the RNAi pathway in embryonic stem cells"". After this exciting journey on gene regulation, I developed a curiosity for the function of proteins on the structural level. And, on how to discover and exploit Biology on the molecular level using Deep Learning.
+I work on representation learning and generative AI for biomedical data analysis.
 
-Currently, I am working as a postdoctoral researcher at MedUni Vienna & CeMM under the supervision of Christoph Bock on deep learning-driven protein design.
+After my major in computer science at TU Berlin, I pursued a PhD at ETH Zurich at the intersection of biology and computer science towards a systematic understanding of regulatory networks in early development.
+My postdoctoral research at the AI Institute of the Medical University of Vienna and the Research Center for Molecular Medicine (CeMM) focuses on the development of multimodal AI architectures for biomedical data analysis in the laboratory of Christoph Bock.
 
 A PDF version of my CV with a list of publications can be found [here](https://github.com/moritzschaefer/cv/raw/master/cv.pdf)

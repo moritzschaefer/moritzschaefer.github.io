@@ -54,9 +54,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title: Moritz Schaefer - Deep Learning & Protein Design
+title: Moritz Schaefer - BioMedical AI
 title_separator          : "-"
-description: Moritz Schaefer - Deep Learning-driven Protein Design
+description: Moritz Schaefer - BioMedical AI
 name                     : "Moritz Schaefer"
 url: https://www.moritzs.de/  # url should be 'http://<github_username>.github.io/homepage' as before
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -148,7 +148,7 @@ author:
   name: 'Moritz Schaefer'
   email: 'mschaefer@cemm.at'
   cv: https://github.com/moritzschaefer/cv/raw/master/cv.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
-  bio: I develop deep learning methods for the design of proteins. <br>Currently at MedUni/CeMM Vienna, working on chimeric antigen receptor cancer therapies.
+  bio: Understanding and designing cells with AI at CeMM & MedUni Vienna
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   # skill_icon1:
   #   - name: fa-linux
@@ -177,6 +177,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/moritzschaefer/"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google"
+      url: "https://scholar.google.com/citations?user=9S9SsvEAAAAJ&hl=en"
 
 # Site Footer
 footer:
