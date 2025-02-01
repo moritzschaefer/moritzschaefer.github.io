@@ -9,6 +9,7 @@ permalink: /outreach/
         width: 100%;
         max-width: 800px;
         margin: 15xp 0;
+        padding: 20px;
     }
     .video-wrapper video {
         width: 100%;
@@ -56,14 +57,14 @@ Research is the backbone of society's prosperity. It is therefore instrumental t
   </video>
 </div>
 
-#### Interview with news article
+#### News article interview
 
 - Title: An AI Lab Partner Helps Sift Through Transcriptomics Data
 - Magazine: The Scientist
 - Date: Late 2024
 
 <a href="https://www.the-scientist.com/an-ai-lab-partner-helps-sift-through-transcriptomics-data-72415">
-![Image]({{ site.baseurl }}/static/assets/img/thescientist_cw_teaser.png)
+  <img src="{{ site.baseurl }}/static/assets/img/thescientist_cw_teaser.png" style="padding: 20px;" alt="TheScientist article">
 </a>
 
 #### Podcast Invitation
@@ -72,7 +73,7 @@ Research is the backbone of society's prosperity. It is therefore instrumental t
 - Podcast: Austrian Artificial Intelligence Podcast 
 - Date: 2023-08-29
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5c2x6B0fHq4DaI1sd4FjfD?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="padding:20px; border-radius:12px" src="https://open.spotify.com/embed/episode/5c2x6B0fHq4DaI1sd4FjfD?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ## Live in academia (soon)
 
