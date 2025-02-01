@@ -3,7 +3,9 @@ main:
     url: /
   # - title: "CV"
   #   url: /blog/
-  - title: "Blog"
-    url: /blog/
+  # - title: "Blog"
+  #   url: /blog/
+  - title: "Media"
+    url: /media/
   - title: "Impressum"
     url: /impressum/
