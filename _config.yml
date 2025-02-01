@@ -59,7 +59,7 @@ title_separator          : "-"
 description: Moritz Schaefer - BioMedical AI
 name                     : "Moritz Schaefer"
 url: https://www.moritzs.de/  # url should be 'http://<github_username>.github.io/homepage' as before
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "moritzschaefer/homepage" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -122,6 +122,8 @@ naver_site_verification  :
 # Social Sharing
 twitter:
   username               : muronglizi
+bluesky:
+  username               : "@moritzbaio@bsky.social"
 facebook:
   username               :
   app_id                 :
@@ -146,7 +148,7 @@ analytics:
 # author
 author:
   name: 'Moritz Schaefer'
-  email: 'mschaefer@cemm.at'
+  email: 'mail@moritzs.de'
   cv: https://github.com/moritzschaefer/cv/raw/master/cv.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
   bio: Understanding and designing cells with AI at CeMM & MedUni Vienna
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
@@ -165,6 +167,8 @@ author:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://your-website.com"
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky-square"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/muronglizi"

@@ -5,7 +5,9 @@ main:
   #   url: /blog/
   # - title: "Blog"
   #   url: /blog/
-  - title: "Media"
-    url: /media/
+  # - title: "Publications"  TODO 
+  #   url: /publications/
+  - title: "Outreach"
+    url: /outreach/
   - title: "Impressum"
     url: /impressum/
