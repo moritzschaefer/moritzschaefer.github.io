@@ -8,7 +8,7 @@ permalink: /outreach/
         position: relative;
         width: 100%;
         max-width: 800px;
-        margin: auto;
+        margin: 15xp 0;
     }
     .video-wrapper video {
         width: 100%;
