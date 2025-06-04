@@ -9,5 +9,7 @@ main:
   #   url: /publications/
   - title: "Outreach"
     url: /outreach/
+  - title: "CeMM"
+    url: /cemm/
   - title: "Impressum"
     url: /impressum/
