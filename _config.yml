@@ -150,7 +150,7 @@ author:
   name: 'Moritz Schaefer'
   email: 'mail@moritzs.de'
   cv: https://github.com/moritzschaefer/cv/raw/master/cv.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
-  bio: Understanding and designing cells with AI at CeMM & MedUni Vienna
+  bio: Understanding and designing cells with AI at Stanford
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   # skill_icon1:
   #   - name: fa-linux
