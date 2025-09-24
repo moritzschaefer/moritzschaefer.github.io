@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 header:
-  image: /static/assets/img/cdr_inpainting.png
+  image: /static/assets/img/bio_language_bridge.png
 ---
 
 
