@@ -149,7 +149,7 @@ analytics:
 author:
   name: 'Moritz Schaefer'
   email: 'mail@moritzs.de'
-  cv: /static/assets/img/cv.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
+  cv: /static/assets/cv.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
   bio: Understanding and designing cells with AI at Stanford
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   # skill_icon1:
