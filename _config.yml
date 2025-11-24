@@ -159,7 +159,7 @@ author:
   #   - name: fa-spinner
   #   - name: fa-database
   avatar: '/static/assets/img/ich.jpg'
-  location         : "Vienna"
+  location         : "Stanford"
   links:
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
