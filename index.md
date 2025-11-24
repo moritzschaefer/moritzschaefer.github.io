@@ -13,4 +13,4 @@ At the AI Institute MedUni Vienna and CeMM I focused on the development of *mult
 
 Currently, I am working as a postdoctoral researcher at Stanford under the supervision of Zinaida Good and Jure Leskovec on *deep learning-driven cell design*.
 
-A PDF version of my CV with a list of publications can be found [here](/static/assets/img/cv.pdf)
+A PDF version of my CV with a list of publications can be found [here](/static/assets/cv.pdf)
