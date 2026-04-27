@@ -1,14 +1,16 @@
 main:
   - title: "About"
     url: /
+  - title: "Portfolio"
+    url: /portfolio/
   # - title: "CV"
   #   url: /blog/
   # - title: "Blog"
   #   url: /blog/
-  # - title: "Publications"  TODO 
+  # - title: "Publications"  TODO
   #   url: /publications/
-  - title: "Outreach"
-    url: /outreach/
+  # - title: "Outreach"
+  #   url: /outreach/
   - title: "CeMM"
     url: /cemm/
   - title: "Impressum"
