@@ -1,12 +1,11 @@
 ---
-title: "AI Institute drone promo video"
+title: "AI institute drone promo video"
 date: 2022-11-03
-description: "FPV drone footage of the AI Institute at MedUni Vienna, showcasing the research environment through an immersive fly-through of the building and surroundings."
-tags: [AI Institute, Video]
+description: "A promotional video for the AI Institute at the Medical University of Vienna, shot using a lightweight drone (under 250 grams). The footage captures interior and exterior views of the Josephinum building and the wider Altes AKH complex, showcasing the institute's location and work environment."
+tags: [AI institute, drone, video]
 media:
-  - type: link
-    src: https://office365stanford-my.sharepoint.com/personal/moritzs_stanford_edu/Documents/Media/Videos/2025_MedUniTrailer/final.mp4
-    label: "Watch the video (OneDrive)"
+  - type: video
+    src: "ai-institute-drone-promo-video.mp4"
 ---
 
-FPV drone footage of the AI Institute at MedUni Vienna, showcasing the research environment through an immersive fly-through of the building and surroundings.
+A promotional video for the AI Institute at the Medical University of Vienna, shot using a lightweight drone (under 250 grams). The footage captures interior and exterior views of the Josephinum building and the wider Altes AKH complex, showcasing the institute's location and work environment.

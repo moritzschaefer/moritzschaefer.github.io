@@ -3,7 +3,7 @@ permalink: /portfolio/
 title: Portfolio
 layout: single
 classes: wide
-author_profile: false
+author_profile: true
 ---
 
 <div class="portfolio-grid">
