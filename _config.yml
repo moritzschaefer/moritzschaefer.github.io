@@ -200,6 +200,13 @@ footer:
       icon: "fab fa-fw fa-linkedin"
 
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:slug/
+    order: reverse
+
 # Reading Files
 include:
   - .htaccess
@@ -332,6 +339,13 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio
+      author_profile: false
   # _pages
   - scope:
       path: ""

@@ -7,6 +7,360 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// ============================================================
+//  Portfolio
+// ============================================================
+$pf-accent: #2563eb;
+$pf-border:  #e6e8ec;
+$pf-muted:   #7a828c;
+$pf-ink:     #23272e;
+
+.portfolio-intro {
+  max-width: 40rem;
+  margin: -0.5em auto 2.5em;
+  color: $pf-muted;
+  font-size: 1.02em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+// Keep the heading, subtitle and cards in one centered column so their left
+// edges line up (Minimal Mistakes renders the page title full-width otherwise).
+.portfolio-page .page__inner-wrap {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  background: #fff;
+  border: 1px solid $pf-border;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+
+  &:hover {
+    box-shadow: 0 12px 32px rgba(16, 24, 40, 0.10);
+    transform: translateY(-2px);
+    border-color: #d6dae0;
+  }
+
+  &__content { padding: 1.5em 1.6em 0.1em; }
+
+  &__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75em 1em;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.35em;
+    line-height: 1.25;
+    font-weight: 700;
+
+    a {
+      text-decoration: none;
+      color: $pf-ink;
+      &:hover { color: $pf-accent; }
+    }
+  }
+
+  &__date {
+    flex: none;
+    font-size: 0.74em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #9aa1a9;
+    white-space: nowrap;
+  }
+
+  &__tags { margin-top: 0.7em; display: flex; flex-wrap: wrap; gap: 0.4em; }
+
+  &__description {
+    margin: 0.85em 0 0;
+    line-height: 1.62;
+    color: #414751;
+  }
+
+  &__media {
+    padding: 1.25em 1.6em 0.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__foot { padding: 1.05em 1.6em 1.35em; }
+
+  &__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    font-size: 0.92em;
+    font-weight: 600;
+    color: $pf-accent;
+    text-decoration: none;
+
+    span[aria-hidden] { transition: transform 0.15s ease; }
+    &:hover span[aria-hidden] { transform: translateX(3px); }
+  }
+
+  &__count {
+    font-weight: 500;
+    color: #9aa1a9;
+  }
+}
+
+// ---- shared media frames --------------------------------------------------
+.pf-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0d0d0f;
+  border: 1px solid $pf-border;
+
+  iframe, video, .pf-yt__thumb {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  video, .pf-yt__thumb { object-fit: cover; }
+}
+
+// images keep their natural aspect (no dark box, no crop) by default
+.pf-frame--img {
+  aspect-ratio: auto;
+  background: #f4f5f7;
+  line-height: 0;
+  display: block;
+
+  img {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 34rem;
+    object-fit: contain;
+    display: block;
+    transition: opacity 0.15s ease;
+  }
+  &:hover img { opacity: 0.94; }
+}
+
+// on the compact index card, crop the single teaser image to a tidy 16:9
+.portfolio-card__media .pf-frame--img {
+  aspect-ratio: 16 / 9;
+  img { height: 100%; max-height: none; object-fit: cover; }
+}
+
+// ---- lite-youtube facade --------------------------------------------------
+.pf-yt {
+  cursor: pointer;
+  &__play {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 68px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+
+    svg { width: 100%; height: 100%; filter: drop-shadow(0 1px 4px rgba(0,0,0,0.45)); }
+    &-bg { fill: #212121; opacity: 0.82; transition: fill 0.15s ease, opacity 0.15s ease; }
+  }
+  &:hover &__play { transform: scale(1.08); }
+  &:hover &__play-bg { fill: #f00; opacity: 1; }
+}
+
+// ---- embeds (Spotify, etc.) & links --------------------------------------
+.pf-embed {
+  line-height: 0;
+  iframe { max-width: 100%; border-radius: 12px; }
+}
+
+.pf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  align-self: flex-start;
+  padding: 0.5em 0.9em;
+  border: 1px solid #d9dce1;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #374151;
+  background: #fff;
+
+  &:hover { background: #f6f8fa; border-color: #c4c9d0; }
+}
+
+// ---- detail page ----------------------------------------------------------
+// The custom top meta (date + tag pills) replaces Minimal Mistakes' own
+// footer meta, whose tag links point at a non-existent /tags/ archive.
+.layout--portfolio .page__meta { display: none; }
+
+.portfolio-detail {
+  &__meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6em 0.9em;
+    margin-bottom: 1.25em;
+  }
+  &__media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    margin-top: 1.75em;
+  }
+  &__back {
+    margin-top: 2.5em;
+    font-size: 0.92em;
+    a { text-decoration: none; font-weight: 600; }
+  }
+}
+
+.portfolio-tag {
+  display: inline-block;
+  padding: 0.2em 0.65em;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: #eef2ff;
+  color: #4051c4;
+  border-radius: 999px;
+  line-height: 1.5;
+}
+
+@media (max-width: 34rem) {
+  .portfolio-card__content { padding: 1.2em 1.15em 0.1em; }
+  .portfolio-card__media   { padding: 1em 1.15em 0.25em; }
+  .portfolio-card__foot    { padding: 0.9em 1.15em 1.15em; }
+  .portfolio-card__title   { font-size: 1.18em; }
+}
+
+// ============================================================
+//  Science (research topics)
+// ============================================================
+.science-intro {
+  max-width: 44rem;
+  margin: -0.5em auto 2.75em;
+  text-align: center;
+  font-size: 1.12em;
+  line-height: 1.6;
+  color: #2c313a;
+}
+
+.science-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.science-card {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid $pf-border;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+
+  &:hover {
+    box-shadow: 0 12px 32px rgba(16, 24, 40, 0.10);
+    transform: translateY(-2px);
+    border-color: #d6dae0;
+  }
+
+  &__media {
+    flex: 0 0 36%;
+    position: relative;
+    min-height: 15rem;
+    background: #eef1f4;
+    overflow: hidden;
+
+    img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+    &--contain {
+      background: #f6f8fa;
+      img { object-fit: contain; padding: 1.1rem; }
+    }
+  }
+
+  &--noimg &__text { width: 100%; }
+
+  &__text { flex: 1; padding: 1.6em 1.75em; }
+
+  &__num { font-size: 0.8em; font-weight: 700; letter-spacing: 0.1em; color: $pf-accent; }
+
+  &__title {
+    margin: 0.15em 0 0.55em;
+    font-size: 1.18em;
+    line-height: 1.3;
+    font-weight: 700;
+    color: $pf-ink;
+  }
+
+  &__body { margin: 0; line-height: 1.62; color: #414751; font-size: 0.96em; }
+
+  &__works {
+    margin-top: 1.1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+
+    a {
+      display: inline-block;
+      padding: 0.3em 0.65em;
+      border: 1px solid #dfe3e8;
+      border-radius: 8px;
+      font-size: 0.76em;
+      font-weight: 600;
+      color: #3a4550;
+      background: #fafbfc;
+      text-decoration: none;
+      transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+
+      &:hover { border-color: #bcc3cc; background: #f1f4f8; color: $pf-accent; }
+    }
+  }
+}
+
+@media (max-width: 40rem) {
+  .science-card { flex-direction: column; }
+  .science-card__media { flex: auto; min-height: 0; height: 12rem; }
+}
+
+// De-emphasize the Impressum nav link so the primary tabs stand out.
+.masthead a[href$="/impressum/"] {
+  opacity: 0.45;
+  font-weight: 400;
+  &:hover { opacity: 0.8; }
+}
+
 html {
     font-size: 13px; // change to whatever
 
