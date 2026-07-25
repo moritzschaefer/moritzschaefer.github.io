@@ -1,6 +1,8 @@
 main:
   - title: "About"
     url: /
+  - title: "Science"
+    url: /science/
   - title: "Portfolio"
     url: /portfolio/
   # - title: "CV"
@@ -11,7 +13,5 @@ main:
   #   url: /publications/
   # - title: "Outreach"
   #   url: /outreach/
-  - title: "CeMM"
-    url: /cemm/
   - title: "Impressum"
     url: /impressum/

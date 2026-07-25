@@ -1,0 +1,21 @@
+<script>
+/* Lite-YouTube facade: swap the thumbnail for the real player only on click,
+   so a page full of videos stays fast and private (no youtube.com requests
+   until the visitor actually plays something). */
+(function () {
+  document.addEventListener("click", function (e) {
+    var frame = e.target.closest(".pf-yt");
+    if (!frame) return;
+    var id = frame.getAttribute("data-yt");
+    if (!id) return;
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0");
+    iframe.setAttribute("title", "YouTube video player");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    iframe.setAttribute("allowfullscreen", "");
+    frame.replaceChildren(iframe);
+    frame.classList.add("pf-yt--live");
+  });
+})();
+</script>

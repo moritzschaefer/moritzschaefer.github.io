@@ -1,0 +1,70 @@
+{%- comment -%}
+  Portfolio media renderer — single source of truth for how a media item looks.
+
+  Tolerant by design: it inspects both the declared `type` and the `src`/`html`
+  so the site renders correctly even when the upstream data is imperfect
+  (e.g. a YouTube watch URL tagged `type: video`).
+
+  Params:
+    include.media  — list of media maps: {type, src, html, label, alt, poster}
+    include.title  — item title (used for alt / aria text)
+    include.limit  — optional; render at most N media (used for compact cards)
+{%- endcomment -%}
+{%- if include.limit -%}{%- assign _limit = include.limit | plus: 0 -%}{%- else -%}{%- assign _limit = 9999 -%}{%- endif -%}
+{%- assign _shown = 0 -%}
+{%- for m in include.media -%}
+  {%- if _shown >= _limit -%}{%- break -%}{%- endif -%}
+  {%- assign _shown = _shown | plus: 1 -%}
+
+  {%- comment -%} resolve a usable src (leave absolute URLs untouched, prepend baseurl for local paths) {%- endcomment -%}
+  {%- assign _src = "" -%}
+  {%- if m.src -%}
+    {%- if m.src contains "://" -%}{%- assign _src = m.src -%}{%- else -%}{%- assign _src = m.src | relative_url -%}{%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%} detect YouTube / Vimeo ids from the raw src {%- endcomment -%}
+  {%- assign _yt = "" -%}
+  {%- assign _vimeo = "" -%}
+  {%- if m.src contains "youtu.be/" -%}{%- assign _yt = m.src | split: "youtu.be/" | last | split: "?" | first | split: "&" | first -%}
+  {%- elsif m.src contains "watch?v=" -%}{%- assign _yt = m.src | split: "watch?v=" | last | split: "&" | first -%}
+  {%- elsif m.src contains "youtube.com/embed/" -%}{%- assign _yt = m.src | split: "/embed/" | last | split: "?" | first -%}
+  {%- elsif m.src contains "youtube-nocookie.com/embed/" -%}{%- assign _yt = m.src | split: "/embed/" | last | split: "?" | first -%}
+  {%- elsif m.src contains "vimeo.com/" -%}{%- assign _vimeo = m.src | split: "vimeo.com/" | last | split: "?" | first | split: "/" | first -%}
+  {%- endif -%}
+
+  {%- comment -%} infer a fallback type from the file extension when needed {%- endcomment -%}
+  {%- assign _low = m.src | downcase -%}
+  {%- assign _type = m.type -%}
+  {%- unless _type -%}
+    {%- if _low contains ".mp4" or _low contains ".webm" or _low contains ".mov" -%}{%- assign _type = "video" -%}
+    {%- elsif _low contains ".jpg" or _low contains ".jpeg" or _low contains ".png" or _low contains ".gif" or _low contains ".webp" or _low contains ".svg" -%}{%- assign _type = "image" -%}
+    {%- elsif m.html -%}{%- assign _type = "embed" -%}
+    {%- else -%}{%- assign _type = "link" -%}
+    {%- endif -%}
+  {%- endunless -%}
+
+  {%- if m.html or _type == "embed" -%}
+    <div class="pf-embed">{{ m.html }}</div>
+  {%- elsif _yt != "" -%}
+    <div class="pf-frame pf-yt" data-yt="{{ _yt }}">
+      <img class="pf-yt__thumb" src="https://i.ytimg.com/vi/{{ _yt }}/hqdefault.jpg" alt="{{ include.title | escape }}" loading="lazy" width="480" height="360" />
+      <button class="pf-yt__play" type="button" aria-label="Play “{{ include.title | escape }}” on YouTube"><svg viewBox="0 0 68 48" aria-hidden="true"><path class="pf-yt__play-bg" d="M66.5 7.7c-.8-2.9-2.5-5.2-5.4-6C55.8.7 34 .7 34 .7S12.2.7 6.9 1.7C4 2.5 2.3 4.8 1.5 7.7.5 13 .5 24 .5 24s0 11 1 16.3c.8 2.9 2.5 5.2 5.4 6C12.2 47.3 34 47.3 34 47.3s21.8 0 27.1-1c2.9-.8 4.6-3.1 5.4-6 1-5.3 1-16.3 1-16.3s0-11-1-16.3z"/><path d="M27 34V14l18 10-18 10z" fill="#fff"/></svg></button>
+    </div>
+  {%- elsif _vimeo != "" -%}
+    <div class="pf-frame">
+      <iframe src="https://player.vimeo.com/video/{{ _vimeo }}" title="{{ include.title | escape }}" loading="lazy" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  {%- elsif _type == "video" -%}
+    <div class="pf-frame">
+      <video class="pf-video" controls preload="metadata" playsinline{% if m.poster %} poster="{{ m.poster | relative_url }}"{% endif %}>
+        <source src="{{ _src }}" />
+      </video>
+    </div>
+  {%- elsif _type == "image" -%}
+    <a class="pf-frame pf-frame--img" href="{{ _src }}" target="_blank" rel="noopener">
+      <img src="{{ _src }}" alt="{{ m.alt | default: include.title | escape }}" loading="lazy" />
+    </a>
+  {%- else -%}
+    <a class="pf-link" href="{{ m.src }}" target="_blank" rel="noopener">{{ m.label | default: "View" }} <span aria-hidden="true">↗</span></a>
+  {%- endif -%}
+{%- endfor -%}

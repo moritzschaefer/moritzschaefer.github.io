@@ -1,0 +1,22 @@
+---
+layout: single
+---
+<div class="portfolio-detail">
+  {%- if page.date or page.tags.size > 0 -%}
+  <div class="portfolio-detail__meta">
+    {%- if page.date %}<time class="portfolio-card__date">{{ page.date | date: "%B %Y" }}</time>{% endif -%}
+    {%- if page.tags.size > 0 %}<span class="portfolio-card__tags">{% for tag in page.tags %}<span class="portfolio-tag">{{ tag }}</span>{% endfor %}</span>{% endif -%}
+  </div>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if page.media -%}
+  <div class="portfolio-detail__media">
+    {% include portfolio-media.html media=page.media title=page.title %}
+  </div>
+  {%- endif -%}
+
+  <p class="portfolio-detail__back"><a href="{{ '/portfolio/' | relative_url }}">← Back to portfolio</a></p>
+</div>
+{% include portfolio-scripts.html %}
